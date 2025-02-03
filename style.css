@@ -47,7 +47,7 @@ a, .logo-text, .photo-author, button{
 
 .photo-author{
     position: absolute;
-    bottom: 2%;
+    bottom: 5%;
     font-size: 0.8em;
     left: clamp(10%, 50%, 20%);
 }
