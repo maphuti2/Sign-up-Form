@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --bg-color: #eee;
+    --create-btn: #596D48;
+    --input-border-color: #E5E7EB;
+    --invalid-color: rgb(218, 3, 3);
+
+    background-color: var(--bg-color);
+}
