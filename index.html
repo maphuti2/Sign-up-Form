@@ -63,9 +63,33 @@
         </div>
 
         <div class="last-part">
-            <button type="submit">Create Account</button>
+            <button type="submit" id="create">Create Account</button>
             <p>Already have an account? <a href="#">Log in</a></p>
         </div>
      </div>
+
+
+
+     <script>
+        const password = document.querySelector('#pass');
+        const secPassword = document.querySelector('#passConfirm');
+        const create = document.querySelector('#create');
+
+        create.addEventListener('click', () => {
+            if (password.value === "" || secPassword.value === ""){
+                alert('Your required to enter your password');
+            }
+
+            else if (password.value === secPassword.value ){
+            alert("Successful!");
+        }
+        else{
+            alert('Enter similar password')
+        }
+        });
+
+        
+
+     </script>
 </body>
 </html>
