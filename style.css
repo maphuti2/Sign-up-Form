@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -9,4 +10,48 @@
     --invalid-color: rgb(218, 3, 3);
 
     background-color: var(--bg-color);
+    font-family:  "Ubuntu", serif;
+}
+
+body{
+    display: flex;
+}
+
+/* Style photo Part*/
+.photo{
+    position: relative;
+}
+
+#bg-img{
+    height: 100vh;
+    width: clamp(350px, 50vw, 450px);
+    z-index: -1;
+}
+
+#logo, .logo-text, .header, .photo-author, a{
+    background-color: rgba(14, 13, 13,.7);
+    color: white;
+}
+
+.header{
+    position: absolute;
+    top: 15%;
+    width: clamp(350px, 50vw, 450px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(5rem, 80%, 7rem);
+    padding: .2em;
+    gap: 16px;
+}
+
+a, .photo-author{
+    background-color: rgba(14, 13, 13,0.1);
+}
+
+.photo-author{
+    position: absolute;
+    bottom: 2%;
+    font-size: 0.8em;
+    left: clamp(10%, 50%, 20%);
 }
