@@ -78,9 +78,6 @@ a, .logo-text, .photo-author, button{
     text-decoration: none;
 }
 
-label, input{
-    margin-left: 2.5em;
-}
 
 h2{
     margin-left: 1.667em;
@@ -95,3 +92,15 @@ button{
     cursor: pointer;
 }
 
+.data{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 2.5em;
+    gap: 2em;
+}
+
+.info{
+    flex: 1 1 calc(50% - 2em);
+    display: flex;
+    flex-direction: column;
+}
